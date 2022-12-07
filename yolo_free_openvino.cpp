@@ -20,7 +20,7 @@ using namespace InferenceEngine;
 #define file_name_t            std::string
 #define imread_t               cv::imread
 #define NMS_THRESH 0.45
-#define BBOX_CONF_THRESH 0.1
+#define BBOX_CONF_THRESH 0.35
 
 static const int INPUT_W = 640;
 static const int INPUT_H = 640;
