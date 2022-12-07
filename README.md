@@ -7,9 +7,9 @@ Main results on COCO-val:
 
 | Model          |  Scale  |    AP    |    AP50    |  XML  |
 |----------------|---------|----------|------------|----------|
-| FreeYOLO-Nano  |  416    |   27.1   |   45.5     | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_nano_openvino.zip) |
-| FreeYOLO-Tiny  |  640    |   31.1   |   49.4     | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_tiny_openvino.zip) |
-| FreeYOLO-Large |  640    |   47.0   |   67.4     | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_large_openvino.zip) |
+| FreeYOLO-Nano  |  640    |      |        | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_nano_openvino.zip) |
+| FreeYOLO-Tiny  |  640    |   34.4   |   53.9     | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_tiny_openvino.zip) |
+| FreeYOLO-Large |  640    |      |        | [github](https://github.com/yjh0410/FreeYOLO/releases/download/weight/yolo_free_large_openvino.zip) |
 | FreeYOLO-Huge  |  640    |      |        |  |
 
 ## Install OpenVINO Toolkit
@@ -70,7 +70,7 @@ source ~/.bashrc
    ```
    For example:
    ```shell
-   python3 mo.py --input_model yolox_tiny.onnx --input_shape [1,3,416,416] --data_type FP16
+   python3 mo.py --input_model yolox_tiny.onnx --input_shape [1,3,640,640] --data_type FP16
    ```  
 
    Make sure the input shape is consistent with [those](yolo_free_openvino.cpp#L24-L25) in cpp file. 
