@@ -22,8 +22,8 @@ using namespace InferenceEngine;
 #define NMS_THRESH 0.45
 #define BBOX_CONF_THRESH 0.35
 
-static const int INPUT_W = 416;
-static const int INPUT_H = 416;
+static const int INPUT_W = 640;
+static const int INPUT_H = 640;
 static const int NUM_CLASSES = 80; // COCO has 80 classes. Modify this value on your own dataset.
 
 
