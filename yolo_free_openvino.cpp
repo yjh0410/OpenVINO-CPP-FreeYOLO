@@ -12,6 +12,7 @@
 
 using namespace InferenceEngine;
 
+
 /**
  * @brief Define names based depends on Unicode path support
  */
